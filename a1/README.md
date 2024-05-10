@@ -1,4 +1,11 @@
 ## 📝 ENSF 692 - Assignment 1 Tasks
+
+Aidan MacNichol
+
+Insanity is doing the same thing over and over again and expecting different results.
+
+- Einstien
+
 * Open VSCode and start a new terminal. 
 * Edit this `README` file to add your first and last name, and your favourite inspirational quote.
 * Edit the `assignment1code.py` file by following the instructions in the comments.
