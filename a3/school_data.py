@@ -224,12 +224,18 @@ def main():
     print(f"Shape of full data array: {hsd.print_shape()}")
     print(f"Dimensions of full data array: {hsd.get_dimensions()}")
 
-    # Prompt for user input
-    school_identifier = input("Please enter the high school name or school code: ")
+    # Prompt for user input (will repromt if a invalid code/name is input)
+    while True:
+        try:
+            school_identifier = input("Please enter the high school name or school code: ")
+            
+        # Print Stage 2 requirements here
+            print("\n***Requested School Statistics***\n")
+            hsd.print_school_stats(school_identifier)
+            break
+        except ValueError as e:
+            print(e)
 
-    # Print Stage 2 requirements here
-    print("\n***Requested School Statistics***\n")
-    hsd.print_school_stats(school_identifier)
 
     # Print Stage 3 requirements here
     print("\n***General Statistics for All Schools***\n")
