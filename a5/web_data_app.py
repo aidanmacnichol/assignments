@@ -84,7 +84,7 @@ def book_data():
     book_data = pd.DataFrame(list(zip(titles, prices)), columns=['Titles','Prices'])   
     
     # Calculate 25% discount and add new 'Sale Price' column 
-    # book_data['Sale Price'] = book_data['Prices'] * 0.75
+    book_data['Sale Price'] = book_data['Prices'] * 0.75
     
     print(book_data)        # Print to the terminal as confirmation - only we can see this
 
@@ -94,5 +94,5 @@ def book_data():
 @app.route("/learn")
 def learn():
     # Return a string the describes one thing you learned in ENSF 692.
-    pass
+    return "I learnt about pivot tables as well as quick indexing and slicing in ENSF 692"
 
